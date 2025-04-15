@@ -15,5 +15,5 @@ jobs:
       - name: Add Reviewer
         uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
         with:
-          reviewers: srisarma04024
+          reviewers: Copilot
           token: ${{ secrets.GITHUB_TOKEN }}

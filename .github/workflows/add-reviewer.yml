@@ -1,0 +1,19 @@
+name: Test Reviewer Add
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  test-reviewer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add Reviewer
+        uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
+        with:
+          reviewers: Copilot
+          token: ${{ secrets.GITHUB_TOKEN }}

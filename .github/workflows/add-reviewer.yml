@@ -15,4 +15,5 @@ jobs:
       - name: Add Reviewer
         uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
         with:
-          reviewers: srisarma0402
+          reviewers: srisarma04024
+          token: ${{ secrets.GITHUB_TOKEN }}
